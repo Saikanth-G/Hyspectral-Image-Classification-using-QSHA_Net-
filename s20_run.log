@@ -1,0 +1,47 @@
+C:\Users\saika\OneDrive\Desktop\test 6\run_s20_full_pavia.py:26: DeprecationWarning: 'asyncio.WindowsSelectorEventLoopPolicy' is deprecated and slated for removal in Python 3.16
+  if hasattr(asyncio, 'WindowsSelectorEventLoopPolicy'):
+C:\Users\saika\OneDrive\Desktop\test 6\run_s20_full_pavia.py:27: DeprecationWarning: 'asyncio.WindowsSelectorEventLoopPolicy' is deprecated and slated for removal in Python 3.16
+  asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+C:\Users\saika\OneDrive\Desktop\test 6\run_s20_full_pavia.py:27: DeprecationWarning: 'asyncio.set_event_loop_policy' is deprecated and slated for removal in Python 3.16
+  asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+Device: cpu  FULL_EPOCHS: 30  Seeds: [42]
+
+============================================================
+  SECTION 20: Full Pavia University Run
+============================================================
+  Shape: 610x340x103  Classes: 9  Labeled: 42,776
+  Full train: 4,277  test: 38,499
+  Extracting patches (full dataset)...
+
+--- Config 1: QHSA-Net original (8q PCA, 30 epochs) ---
+  Seed 42...
+  [QHSA-8q-PCA-s42] ep   1/30  loss=0.9503  train_acc=67.5%  (47s)
+  [QHSA-8q-PCA-s42] ep   5/30  loss=0.2466  train_acc=90.2%  (243s)
+  [QHSA-8q-PCA-s42] ep  10/30  loss=0.1035  train_acc=96.1%  (484s)
+  [QHSA-8q-PCA-s42] ep  15/30  loss=0.0428  train_acc=98.5%  (691s)
+  [QHSA-8q-PCA-s42] ep  20/30  loss=0.0086  train_acc=99.7%  (859s)
+  [QHSA-8q-PCA-s42] ep  25/30  loss=0.0018  train_acc=100.0%  (1025s)
+  [QHSA-8q-PCA-s42] ep  30/30  loss=0.0012  train_acc=100.0%  (1190s)
+
+  Training complete: 1190.5s (19.8 min)
+    OA=99.49%  AA=99.02%  kappa=99.33  19.8min
+
+--- Config 2: QHSA-Net improved (4q TruncSVD, 30 epochs) ---
+  Seed 42...
+  [QHSA-4q-TruncSVD-s42] ep   1/30  loss=0.9730  train_acc=65.9%  (31s)
+  [QHSA-4q-TruncSVD-s42] ep   5/30  loss=0.2283  train_acc=91.5%  (157s)
+  [QHSA-4q-TruncSVD-s42] ep  10/30  loss=0.0999  train_acc=96.3%  (314s)
+  [QHSA-4q-TruncSVD-s42] ep  15/30  loss=0.0413  train_acc=98.4%  (472s)
+  [QHSA-4q-TruncSVD-s42] ep  20/30  loss=0.0146  train_acc=99.6%  (629s)
+  [QHSA-4q-TruncSVD-s42] ep  25/30  loss=0.0022  train_acc=100.0%  (812s)
+  [QHSA-4q-TruncSVD-s42] ep  30/30  loss=0.0012  train_acc=100.0%  (997s)
+
+  Training complete: 997.3s (16.6 min)
+    OA=99.48%  AA=99.00%  kappa=99.31  16.6min
+
+=== Full Pavia U Results ===
+  QHSA-4q-TruncSVD: OA=99.48+-nan  AA=99.00+-nan  kappa=99.31+-nan
+  QHSA-8q-PCA: OA=99.49+-nan  AA=99.02+-nan  kappa=99.33+-nan
+Saved: full_pavia_results.csv
+
+Notebook cell 50 (S20) patched with outputs.

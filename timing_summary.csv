@@ -1,0 +1,9 @@
+Stage,Time_s
+1_data_normalisation,0.6429829597473145
+2_pca_fit,0.2006213665008545
+3_pca_transform_full,0.1391456127166748
+4_svm_fit,0.0981893539428711
+5_svm_inference,3.114750862121582
+6_qhsa_per_epoch_est,30.808009266853333
+7_qhsa_full_train_est,924.2402780056
+8_qhsa_inference,104.62447929382324

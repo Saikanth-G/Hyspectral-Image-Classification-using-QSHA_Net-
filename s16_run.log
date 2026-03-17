@@ -1,0 +1,104 @@
+C:\Users\saika\OneDrive\Desktop\test 6\run_s16_arch.py:25: DeprecationWarning: 'asyncio.WindowsSelectorEventLoopPolicy' is deprecated and slated for removal in Python 3.16
+  if hasattr(asyncio, 'WindowsSelectorEventLoopPolicy'):
+C:\Users\saika\OneDrive\Desktop\test 6\run_s16_arch.py:26: DeprecationWarning: 'asyncio.WindowsSelectorEventLoopPolicy' is deprecated and slated for removal in Python 3.16
+  asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+C:\Users\saika\OneDrive\Desktop\test 6\run_s16_arch.py:26: DeprecationWarning: 'asyncio.set_event_loop_policy' is deprecated and slated for removal in Python 3.16
+  asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+Device: cpu  EXP_EPOCHS_ARCH: 8
+
+=== Section 16: DR Placement in Architecture ===
+  Shape: 610x340x103  Classes: 9  Labeled: 42,776
+  Train: 4,277  Test: 38,499
+  Extracting patches...
+  PCA variance retained: 99.4%
+
+============================================================
+  SECTION 16: DR Placement in Architecture
+============================================================
+  EXP_EPOCHS_ARCH = 8
+
+[S16] Training A: 3D-CNN+PCA (baseline)...
+  [A: 3D-CNN+PCA (baseline)] ep  1/8  loss=0.9503  acc=67.5%  (47s)
+  [A: 3D-CNN+PCA (baseline)] ep  2/8  loss=0.4799  acc=81.1%  (96s)
+  [A: 3D-CNN+PCA (baseline)] ep  4/8  loss=0.2999  acc=88.5%  (195s)
+  [A: 3D-CNN+PCA (baseline)] ep  6/8  loss=0.1627  acc=94.8%  (290s)
+  [A: 3D-CNN+PCA (baseline)] ep  8/8  loss=0.0984  acc=97.0%  (385s)
+  Done: 6.4min
+  OA=96.48%  AA=93.89%  kappa=95.33  time=389s
+
+[S16] Training B: MLP+PCA (joint)...
+  [B: MLP+PCA (joint)] ep  1/8  loss=1.1613  acc=58.7%  (5s)
+  [B: MLP+PCA (joint)] ep  2/8  loss=0.7980  acc=68.6%  (11s)
+  [B: MLP+PCA (joint)] ep  4/8  loss=0.7083  acc=71.6%  (21s)
+  [B: MLP+PCA (joint)] ep  6/8  loss=0.6799  acc=71.5%  (31s)
+  [B: MLP+PCA (joint)] ep  8/8  loss=0.6611  acc=72.9%  (42s)
+  Done: 0.7min
+  OA=73.57%  AA=61.54%  kappa=63.48  time=42s
+
+[S16] Training C: MLP-PCA+VQC-Raw (reversed)...
+  [C: MLP-PCA+VQC-Raw (reversed)] ep  1/8  loss=1.1563  acc=60.0%  (6s)
+  [C: MLP-PCA+VQC-Raw (reversed)] ep  2/8  loss=0.7899  acc=68.8%  (11s)
+  [C: MLP-PCA+VQC-Raw (reversed)] ep  4/8  loss=0.7118  acc=71.5%  (23s)
+  [C: MLP-PCA+VQC-Raw (reversed)] ep  6/8  loss=0.6800  acc=71.6%  (34s)
+  [C: MLP-PCA+VQC-Raw (reversed)] ep  8/8  loss=0.6590  acc=73.1%  (45s)
+  Done: 0.8min
+  OA=73.20%  AA=61.39%  kappa=63.12  time=45s
+
+[S16] Training D: Shared-Enc (joint)...
+  [D: Shared-Enc (joint)] ep  1/8  loss=1.3714  acc=52.7%  (6s)
+  [D: Shared-Enc (joint)] ep  2/8  loss=0.9513  acc=63.1%  (11s)
+  [D: Shared-Enc (joint)] ep  4/8  loss=0.8173  acc=66.9%  (23s)
+  [D: Shared-Enc (joint)] ep  6/8  loss=0.7636  acc=68.5%  (36s)
+  [D: Shared-Enc (joint)] ep  8/8  loss=0.7429  acc=69.0%  (48s)
+  Done: 0.8min
+  OA=70.13%  AA=56.98%  kappa=58.59  time=48s
+
+                       config        OA        AA     kappa  train_time_s
+     A: 3D-CNN+PCA (baseline) 96.483026 93.892007 95.331108    388.567738
+           B: MLP+PCA (joint) 73.570742 61.537010 63.477225     41.985127
+C: MLP-PCA+VQC-Raw (reversed) 73.201901 61.394402 63.117871     45.282681
+        D: Shared-Enc (joint) 70.134289 56.982701 58.586067     47.653757
+Saved: fig_s16_arch_placement.png
+Saved: s16_arch_results.csv
+
+============================================================
+
+  SECTION 16: DR Placement in Architecture
+
+============================================================
+
+  EXP_EPOCHS_ARCH = 8
+
+
+[S16] Training A: 3D-CNN+PCA (baseline)...
+
+  OA=96.48%  AA=93.89%  kappa=95.33  time=389s
+
+
+[S16] Training B: MLP+PCA (joint)...
+
+  OA=73.57%  AA=61.54%  kappa=63.48  time=42s
+
+
+[S16] Training C: MLP-PCA+VQC-Raw (reversed)...
+
+  OA=73.20%  AA=61.39%  kappa=63.12  time=45s
+
+
+[S16] Training D: Shared-Enc (joint)...
+
+  OA=70.13%  AA=56.98%  kappa=58.59  time=48s
+
+
+                       config        OA        AA     kappa  train_time_s
+     A: 3D-CNN+PCA (baseline) 96.483026 93.892007 95.331108    388.567738
+           B: MLP+PCA (joint) 73.570742 61.537010 63.477225     41.985127
+C: MLP-PCA+VQC-Raw (reversed) 73.201901 61.394402 63.117871     45.282681
+        D: Shared-Enc (joint) 70.134289 56.982701 58.586067     47.653757
+
+Saved: fig_s16_arch_placement.png
+
+Saved: s16_arch_results.csv
+
+
+Notebook cell 42 (S16) patched with outputs.

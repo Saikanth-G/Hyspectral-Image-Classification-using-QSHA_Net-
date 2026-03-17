@@ -1,0 +1,19 @@
+Experiment,Model,OA (%),AA (%),Kappa (%)
+Main (10% labels),SVM (RBF),88.5426,84.9453,84.6053
+Main (10% labels),HybridSN,99.7688,99.4963,99.6937
+Main (10% labels),QHSA-Net,99.9065,99.7261,99.8761
+Ablation,V1: No Quantum,99.8571,99.6283,99.8107
+Ablation,V2: Cat Fusion,99.9247,99.8125,99.9002
+Ablation,V3: QHSA-Net (full),99.9065,99.7261,99.8761
+DataEff (1%),SVM,83.7281,,
+DataEff (1%),HybridSN,81.1235,,
+DataEff (1%),QHSA-Net,85.0693,,
+DataEff (3%),SVM,86.9424,,
+DataEff (3%),HybridSN,92.3264,,
+DataEff (3%),QHSA-Net,97.6261,,
+DataEff (5%),SVM,88.1589,,
+DataEff (5%),HybridSN,98.1889,,
+DataEff (5%),QHSA-Net,99.1437,,
+DataEff (10%),SVM,89.0413,,
+DataEff (10%),HybridSN,99.6831,,
+DataEff (10%),QHSA-Net,99.826,,
