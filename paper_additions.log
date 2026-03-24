@@ -1,0 +1,218 @@
+2026-03-23 12:14:35,991  
+============================================================
+  Section 1: Parameter Count & Model Complexity
+============================================================
+2026-03-23 12:14:37,321    QHSA-Net        | PaviaU       | total=17,125,121 (classical=17,124,649, quantum=472)
+2026-03-23 12:14:37,363    SSRN            | PaviaU       | total=925,673 (classical=925,673, quantum=0)
+2026-03-23 12:14:37,381    DBDA            | PaviaU       | total=29,112 (classical=29,112, quantum=0)
+2026-03-23 12:14:37,387    3D-CNN-Only     | PaviaU       | total=25,641 (classical=25,641, quantum=0)
+2026-03-23 12:14:37,395    HybridSN        | PaviaU       | total=147,833 (classical=147,833, quantum=0)
+2026-03-23 12:14:38,586    QHSA-Net        | IndianPines  | total=33,217,160 (classical=33,216,688, quantum=472)
+2026-03-23 12:14:38,637    SSRN            | IndianPines  | total=1,224,560 (classical=1,224,560, quantum=0)
+2026-03-23 12:14:38,651    DBDA            | IndianPines  | total=30,015 (classical=30,015, quantum=0)
+2026-03-23 12:14:38,655    3D-CNN-Only     | IndianPines  | total=26,544 (classical=26,544, quantum=0)
+2026-03-23 12:14:38,665    HybridSN        | IndianPines  | total=149,632 (classical=149,632, quantum=0)
+2026-03-23 12:14:40,269    QHSA-Net        | Salinas      | total=33,880,712 (classical=33,880,240, quantum=472)
+2026-03-23 12:14:40,328    SSRN            | Salinas      | total=1,236,848 (classical=1,236,848, quantum=0)
+2026-03-23 12:14:40,338    DBDA            | Salinas      | total=30,015 (classical=30,015, quantum=0)
+2026-03-23 12:14:40,344    3D-CNN-Only     | Salinas      | total=26,544 (classical=26,544, quantum=0)
+2026-03-23 12:14:40,357    HybridSN        | Salinas      | total=149,632 (classical=149,632, quantum=0)
+2026-03-23 12:14:41,751    Saved: fig_paper_params.png
+2026-03-23 12:14:42,836    Saved: fig_paper_params_vs_oa.png
+2026-03-23 12:14:42,836  Section 1 complete.
+2026-03-23 12:14:42,837  
+============================================================
+  Section 2: Classification Maps
+============================================================
+2026-03-23 12:14:42,837  
+=== Classification Map: PaviaU ===
+2026-03-23 12:14:53,345    PaviaU | 610×340×103 | 9 classes | train=4273 test=38503 | seed=42
+2026-03-23 12:14:53,437    Training QHSA-Net for PaviaU map...
+2026-03-23 12:16:15,430    [Map-Pa-QHSA-N] ep   1/30  loss=1.1161  acc=62.8%  (70s)
+2026-03-23 12:20:53,406    [Map-Pa-QHSA-N] ep   5/30  loss=0.2248  acc=91.6%  (348s)
+2026-03-23 12:26:43,053    [Map-Pa-QHSA-N] ep  10/30  loss=0.0649  acc=97.7%  (697s)
+2026-03-23 12:32:31,482    [Map-Pa-QHSA-N] ep  15/30  loss=0.0149  acc=99.6%  (1046s)
+2026-03-23 12:38:05,012    [Map-Pa-QHSA-N] ep  20/30  loss=0.0055  acc=99.9%  (1379s)
+2026-03-23 12:43:48,950    [Map-Pa-QHSA-N] ep  25/30  loss=0.0017  acc=100.0%  (1723s)
+2026-03-23 12:49:32,820    [Map-Pa-QHSA-N] ep  30/30  loss=0.0014  acc=100.0%  (2067s)
+2026-03-23 12:49:32,826    Predicting all 207,400 pixels...
+2026-03-23 12:58:10,736    QHSA-Net test OA=98.78%  kappa=98.38
+2026-03-23 12:58:10,739    Training SSRN for PaviaU map...
+2026-03-23 12:59:00,393    [Map-Pa-SSRN] ep   1/30  loss=0.5581  acc=79.3%  (49s)
+2026-03-23 13:02:21,043    [Map-Pa-SSRN] ep   5/30  loss=0.0715  acc=97.3%  (250s)
+2026-03-23 13:06:28,181    [Map-Pa-SSRN] ep  10/30  loss=0.0399  acc=98.7%  (497s)
+2026-03-23 13:10:34,578    [Map-Pa-SSRN] ep  15/30  loss=0.0025  acc=100.0%  (744s)
+2026-03-23 13:14:39,267    [Map-Pa-SSRN] ep  20/30  loss=0.0023  acc=100.0%  (988s)
+2026-03-23 13:18:44,079    [Map-Pa-SSRN] ep  25/30  loss=0.0012  acc=100.0%  (1233s)
+2026-03-23 13:22:57,025    [Map-Pa-SSRN] ep  30/30  loss=0.0007  acc=100.0%  (1486s)
+2026-03-23 13:22:57,033    Predicting all 207,400 pixels...
+2026-03-23 13:38:53,694    SSRN test OA=99.90%  kappa=99.87
+2026-03-23 13:38:53,708    Training DBDA for PaviaU map...
+2026-03-23 13:39:56,285    [Map-Pa-DBDA] ep   1/30  loss=1.4355  acc=51.3%  (63s)
+2026-03-23 13:43:43,659    [Map-Pa-DBDA] ep   5/30  loss=0.3711  acc=85.8%  (290s)
+2026-03-23 13:48:17,976    [Map-Pa-DBDA] ep  10/30  loss=0.2700  acc=89.3%  (564s)
+2026-03-23 13:52:56,820    [Map-Pa-DBDA] ep  15/30  loss=0.2151  acc=91.2%  (843s)
+2026-03-23 13:57:14,610    [Map-Pa-DBDA] ep  20/30  loss=0.1645  acc=94.2%  (1101s)
+2026-03-23 14:01:29,703    [Map-Pa-DBDA] ep  25/30  loss=0.1349  acc=95.8%  (1356s)
+2026-03-23 14:05:47,639    [Map-Pa-DBDA] ep  30/30  loss=0.1257  acc=96.0%  (1614s)
+2026-03-23 14:05:47,651    Predicting all 207,400 pixels...
+2026-03-23 14:21:51,865    DBDA test OA=96.48%  kappa=95.33
+2026-03-23 14:21:51,878    Training 3D-CNN-Only for PaviaU map...
+2026-03-23 14:22:19,869    [Map-Pa-3D-CNN] ep   1/30  loss=1.4255  acc=54.3%  (28s)
+2026-03-23 14:24:00,842    [Map-Pa-3D-CNN] ep   5/30  loss=0.4504  acc=82.3%  (129s)
+2026-03-23 14:26:10,275    [Map-Pa-3D-CNN] ep  10/30  loss=0.3159  acc=87.9%  (258s)
+2026-03-23 14:28:16,667    [Map-Pa-3D-CNN] ep  15/30  loss=0.2594  acc=90.1%  (385s)
+2026-03-23 14:30:22,064    [Map-Pa-3D-CNN] ep  20/30  loss=0.2133  acc=91.8%  (510s)
+2026-03-23 14:32:26,102    [Map-Pa-3D-CNN] ep  25/30  loss=0.1954  acc=92.5%  (634s)
+2026-03-23 14:34:28,210    [Map-Pa-3D-CNN] ep  30/30  loss=0.1812  acc=93.3%  (756s)
+2026-03-23 14:34:28,216    Predicting all 207,400 pixels...
+2026-03-23 14:40:27,770    3D-CNN-Only test OA=93.43%  kappa=91.25
+2026-03-23 14:40:28,797    Saved: fig_paper_map_paviau.png
+2026-03-23 14:40:28,918  
+=== Classification Map: IndianPines ===
+2026-03-23 14:40:29,700    IndianPines | 145×145×200 | 16 classes | train=1020 test=9229 | seed=42
+2026-03-23 14:40:29,906    Training QHSA-Net for IndianPines map...
+2026-03-23 14:40:44,664    [Map-In-QHSA-N] ep   1/30  loss=2.3496  acc=29.4%  (14s)
+2026-03-23 14:41:40,810    [Map-In-QHSA-N] ep   5/30  loss=1.3232  acc=51.8%  (71s)
+2026-03-23 14:42:47,775    [Map-In-QHSA-N] ep  10/30  loss=0.8217  acc=69.8%  (138s)
+2026-03-23 14:43:57,170    [Map-In-QHSA-N] ep  15/30  loss=0.3889  acc=87.4%  (207s)
+2026-03-23 14:45:06,385    [Map-In-QHSA-N] ep  20/30  loss=0.2053  acc=94.0%  (276s)
+2026-03-23 14:46:15,535    [Map-In-QHSA-N] ep  25/30  loss=0.1130  acc=97.7%  (345s)
+2026-03-23 14:47:22,863    [Map-In-QHSA-N] ep  30/30  loss=0.0988  acc=98.0%  (413s)
+2026-03-23 14:47:22,865    Predicting all 21,025 pixels...
+2026-03-23 14:49:03,680    QHSA-Net test OA=89.75%  kappa=88.31
+2026-03-23 14:49:03,690    Training SSRN for IndianPines map...
+2026-03-23 14:49:27,225    [Map-In-SSRN] ep   1/30  loss=1.9405  acc=42.5%  (23s)
+2026-03-23 14:50:57,976    [Map-In-SSRN] ep   5/30  loss=0.2553  acc=90.8%  (114s)
+2026-03-23 14:52:49,096    [Map-In-SSRN] ep  10/30  loss=0.0673  acc=97.9%  (225s)
+2026-03-23 14:56:17,352    [Map-In-SSRN] ep  15/30  loss=0.0116  acc=99.9%  (434s)
+2026-03-23 15:00:08,139    [Map-In-SSRN] ep  20/30  loss=0.0039  acc=100.0%  (664s)
+2026-03-23 15:01:54,877    [Map-In-SSRN] ep  25/30  loss=0.0037  acc=100.0%  (771s)
+2026-03-23 15:05:16,392    [Map-In-SSRN] ep  30/30  loss=0.0032  acc=100.0%  (973s)
+2026-03-23 15:05:16,398    Predicting all 21,025 pixels...
+2026-03-23 15:11:26,040    SSRN test OA=98.69%  kappa=98.51
+2026-03-23 15:11:26,060    Training DBDA for IndianPines map...
+2026-03-23 15:12:16,707    [Map-In-DBDA] ep   1/30  loss=2.5770  acc=29.0%  (51s)
+2026-03-23 15:15:21,572    [Map-In-DBDA] ep   5/30  loss=1.7280  acc=37.8%  (235s)
+2026-03-23 15:19:13,685    [Map-In-DBDA] ep  10/30  loss=1.5256  acc=44.5%  (468s)
+2026-03-23 15:23:07,686    [Map-In-DBDA] ep  15/30  loss=1.3620  acc=49.5%  (702s)
+2026-03-23 15:26:59,105    [Map-In-DBDA] ep  20/30  loss=1.2922  acc=52.6%  (933s)
+2026-03-23 15:30:50,145    [Map-In-DBDA] ep  25/30  loss=1.2149  acc=52.8%  (1164s)
+2026-03-23 15:34:42,310    [Map-In-DBDA] ep  30/30  loss=1.2259  acc=55.3%  (1396s)
+2026-03-23 15:34:42,324    Predicting all 21,025 pixels...
+2026-03-23 15:41:41,023    DBDA test OA=55.48%  kappa=48.17
+2026-03-23 15:41:41,046    Training 3D-CNN-Only for IndianPines map...
+2026-03-23 15:42:08,438    [Map-In-3D-CNN] ep   1/30  loss=2.5763  acc=24.2%  (27s)
+2026-03-23 15:43:54,021    [Map-In-3D-CNN] ep   5/30  loss=1.7398  acc=37.1%  (133s)
+2026-03-23 15:46:04,995    [Map-In-3D-CNN] ep  10/30  loss=1.5525  acc=43.7%  (264s)
+2026-03-23 15:48:16,662    [Map-In-3D-CNN] ep  15/30  loss=1.4735  acc=45.8%  (395s)
+2026-03-23 15:50:28,622    [Map-In-3D-CNN] ep  20/30  loss=1.3494  acc=49.3%  (527s)
+2026-03-23 15:52:40,405    [Map-In-3D-CNN] ep  25/30  loss=1.3419  acc=49.5%  (659s)
+2026-03-23 15:54:52,230    [Map-In-3D-CNN] ep  30/30  loss=1.3183  acc=50.9%  (791s)
+2026-03-23 15:54:52,241    Predicting all 21,025 pixels...
+2026-03-23 15:57:39,726    3D-CNN-Only test OA=50.15%  kappa=40.93
+2026-03-23 15:57:42,497    Saved: fig_paper_map_indianpines.png
+2026-03-23 15:57:42,710  
+=== Classification Map: Salinas ===
+2026-03-23 15:58:05,627    Salinas | 512×217×204 | 16 classes | train=5403 test=48726 | seed=42
+2026-03-23 15:58:05,944    Training QHSA-Net for Salinas map...
+2026-03-23 16:01:02,770    [Map-Sa-QHSA-N] ep   1/30  loss=1.3285  acc=53.7%  (175s)
+2026-03-23 16:11:56,493    [Map-Sa-QHSA-N] ep   5/30  loss=0.2345  acc=90.5%  (829s)
+2026-03-23 16:25:37,682    [Map-Sa-QHSA-N] ep  10/30  loss=0.1456  acc=94.2%  (1650s)
+2026-03-23 16:39:15,642    [Map-Sa-QHSA-N] ep  15/30  loss=0.1010  acc=96.0%  (2468s)
+2026-03-23 16:52:55,462    [Map-Sa-QHSA-N] ep  20/30  loss=0.0616  acc=97.7%  (3288s)
+2026-03-23 17:06:34,227    [Map-Sa-QHSA-N] ep  25/30  loss=0.0508  acc=98.2%  (4107s)
+2026-03-23 17:20:12,145    [Map-Sa-QHSA-N] ep  30/30  loss=0.0417  acc=98.5%  (4925s)
+2026-03-23 17:20:12,149    Predicting all 111,104 pixels...
+2026-03-23 17:37:34,294    QHSA-Net test OA=97.74%  kappa=97.48
+2026-03-23 17:37:34,324    Training SSRN for Salinas map...
+2026-03-23 17:41:58,947    [Map-Sa-SSRN] ep   1/30  loss=0.7456  acc=72.4%  (264s)
+2026-03-23 17:54:50,233    [Map-Sa-SSRN] ep   5/30  loss=0.1675  acc=93.7%  (1036s)
+2026-03-23 18:04:55,898    [Map-Sa-SSRN] ep  10/30  loss=0.0763  acc=97.5%  (1641s)
+2026-03-23 18:15:01,817    [Map-Sa-SSRN] ep  15/30  loss=0.0458  acc=98.4%  (2247s)
+2026-03-23 18:25:03,073    [Map-Sa-SSRN] ep  20/30  loss=0.0269  acc=98.9%  (2849s)
+2026-03-23 18:35:12,575    [Map-Sa-SSRN] ep  25/30  loss=0.0094  acc=99.8%  (3458s)
+2026-03-23 18:45:18,191    [Map-Sa-SSRN] ep  30/30  loss=0.0083  acc=99.7%  (4064s)
+2026-03-23 18:45:18,213    Predicting all 111,104 pixels...
+2026-03-23 19:05:36,440    SSRN test OA=99.96%  kappa=99.95
+2026-03-23 19:05:36,455    Training DBDA for Salinas map...
+2026-03-23 19:07:54,641    [Map-Sa-DBDA] ep   1/30  loss=1.8754  acc=42.9%  (138s)
+2026-03-23 19:16:44,784    [Map-Sa-DBDA] ep   5/30  loss=0.6622  acc=70.0%  (668s)
+2026-03-23 19:28:21,298    [Map-Sa-DBDA] ep  10/30  loss=0.5520  acc=75.6%  (1365s)
+2026-03-23 19:40:21,535    [Map-Sa-DBDA] ep  15/30  loss=0.4584  acc=79.2%  (2085s)
+2026-03-23 19:52:19,074    [Map-Sa-DBDA] ep  20/30  loss=0.4066  acc=81.4%  (2803s)
+2026-03-23 20:04:31,863    [Map-Sa-DBDA] ep  25/30  loss=0.4032  acc=82.6%  (3535s)
+2026-03-23 20:15:52,554    [Map-Sa-DBDA] ep  30/30  loss=0.3897  acc=83.4%  (4216s)
+2026-03-23 20:15:52,566    Predicting all 111,104 pixels...
+2026-03-23 20:38:15,487    DBDA test OA=87.95%  kappa=86.52
+2026-03-23 20:38:15,505    Training 3D-CNN-Only for Salinas map...
+2026-03-23 20:39:18,134    [Map-Sa-3D-CNN] ep   1/30  loss=1.9937  acc=38.0%  (63s)
+2026-03-23 20:43:16,798    [Map-Sa-3D-CNN] ep   5/30  loss=0.7125  acc=68.5%  (301s)
+2026-03-23 20:48:12,256    [Map-Sa-3D-CNN] ep  10/30  loss=0.5748  acc=74.5%  (597s)
+2026-03-23 20:53:09,237    [Map-Sa-3D-CNN] ep  15/30  loss=0.5040  acc=77.8%  (894s)
+2026-03-23 20:58:03,362    [Map-Sa-3D-CNN] ep  20/30  loss=0.4547  acc=80.4%  (1188s)
+2026-03-23 21:02:55,418    [Map-Sa-3D-CNN] ep  25/30  loss=0.4433  acc=80.5%  (1480s)
+2026-03-23 21:07:22,266    [Map-Sa-3D-CNN] ep  30/30  loss=0.4250  acc=81.4%  (1747s)
+2026-03-23 21:07:22,270    Predicting all 111,104 pixels...
+2026-03-23 21:14:18,458    3D-CNN-Only test OA=86.63%  kappa=85.05
+2026-03-23 21:14:19,259    Saved: fig_paper_map_salinas.png
+2026-03-23 21:14:19,407  Section 2 complete.
+2026-03-23 21:14:19,408  
+============================================================
+  Section 3: Noise Robustness Experiment
+============================================================
+2026-03-23 21:14:19,408  Loading Pavia University for noise robustness...
+2026-03-23 21:14:22,802    PaviaU | 610×340×103 | 9 classes | train=4273 test=38503 | seed=42
+2026-03-23 21:14:22,826  
+--- Training QHSA-Net on clean Pavia U ---
+2026-03-23 21:14:51,815    [Noise-QHSA-N] ep   1/30  loss=1.1161  acc=62.8%  (29s)
+2026-03-23 21:16:40,804    [Noise-QHSA-N] ep   5/30  loss=0.2248  acc=91.6%  (138s)
+2026-03-23 21:18:58,745    [Noise-QHSA-N] ep  10/30  loss=0.0649  acc=97.7%  (276s)
+2026-03-23 21:21:15,052    [Noise-QHSA-N] ep  15/30  loss=0.0149  acc=99.6%  (412s)
+2026-03-23 21:23:31,102    [Noise-QHSA-N] ep  20/30  loss=0.0055  acc=99.9%  (548s)
+2026-03-23 21:25:46,491    [Noise-QHSA-N] ep  25/30  loss=0.0017  acc=100.0%  (683s)
+2026-03-23 21:27:59,623    [Noise-QHSA-N] ep  30/30  loss=0.0014  acc=100.0%  (817s)
+2026-03-23 21:27:59,623    Testing QHSA-Net across noise levels...
+2026-03-23 21:28:52,669      noise=0.00: OA=98.78%  kappa=98.38
+2026-03-23 21:29:47,769      noise=0.05: OA=74.80%  kappa=69.05
+2026-03-23 21:30:42,718      noise=0.10: OA=63.31%  kappa=56.25
+2026-03-23 21:31:38,342      noise=0.15: OA=49.83%  kappa=42.93
+2026-03-23 21:32:33,707      noise=0.20: OA=37.07%  kappa=30.83
+2026-03-23 21:33:28,167      noise=0.30: OA=23.74%  kappa=18.99
+2026-03-23 21:34:23,810      noise=0.50: OA=15.35%  kappa=12.28
+2026-03-23 21:34:23,810  
+--- Training SSRN on clean Pavia U ---
+2026-03-23 21:35:08,390    [Noise-SSRN] ep   1/30  loss=0.5581  acc=79.3%  (45s)
+2026-03-23 21:38:01,929    [Noise-SSRN] ep   5/30  loss=0.0715  acc=97.3%  (218s)
+2026-03-23 21:41:41,210    [Noise-SSRN] ep  10/30  loss=0.0399  acc=98.7%  (437s)
+2026-03-23 21:45:20,921    [Noise-SSRN] ep  15/30  loss=0.0025  acc=100.0%  (657s)
+2026-03-23 21:48:58,621    [Noise-SSRN] ep  20/30  loss=0.0023  acc=100.0%  (875s)
+2026-03-23 21:52:37,409    [Noise-SSRN] ep  25/30  loss=0.0012  acc=100.0%  (1094s)
+2026-03-23 21:56:20,367    [Noise-SSRN] ep  30/30  loss=0.0007  acc=100.0%  (1317s)
+2026-03-23 21:56:20,368    Testing SSRN across noise levels...
+2026-03-23 21:58:35,357      noise=0.00: OA=99.90%  kappa=99.87
+2026-03-23 22:00:50,217      noise=0.05: OA=27.41%  kappa=18.88
+2026-03-23 22:03:03,304      noise=0.10: OA=25.17%  kappa=15.88
+2026-03-23 22:05:18,989      noise=0.15: OA=24.28%  kappa=14.66
+2026-03-23 22:07:32,078      noise=0.20: OA=23.50%  kappa=13.62
+2026-03-23 22:09:45,285      noise=0.30: OA=22.20%  kappa=12.03
+2026-03-23 22:11:59,083      noise=0.50: OA=19.72%  kappa=9.36
+2026-03-23 22:11:59,083  
+--- Training 3D-CNN-Only on clean Pavia U ---
+2026-03-23 22:12:20,921    [Noise-3D-CNN] ep   1/30  loss=1.4255  acc=54.3%  (22s)
+2026-03-23 22:13:48,190    [Noise-3D-CNN] ep   5/30  loss=0.4504  acc=82.3%  (109s)
+2026-03-23 22:15:36,547    [Noise-3D-CNN] ep  10/30  loss=0.3159  acc=87.9%  (217s)
+2026-03-23 22:17:28,431    [Noise-3D-CNN] ep  15/30  loss=0.2594  acc=90.1%  (329s)
+2026-03-23 22:19:14,331    [Noise-3D-CNN] ep  20/30  loss=0.2133  acc=91.8%  (435s)
+2026-03-23 22:21:00,985    [Noise-3D-CNN] ep  25/30  loss=0.1954  acc=92.5%  (542s)
+2026-03-23 22:22:47,394    [Noise-3D-CNN] ep  30/30  loss=0.1812  acc=93.3%  (648s)
+2026-03-23 22:22:47,394    Testing 3D-CNN-Only across noise levels...
+2026-03-23 22:23:34,611      noise=0.00: OA=93.43%  kappa=91.25
+2026-03-23 22:24:24,957      noise=0.05: OA=38.75%  kappa=30.85
+2026-03-23 22:25:15,879      noise=0.10: OA=19.30%  kappa=13.01
+2026-03-23 22:26:06,258      noise=0.15: OA=10.27%  kappa=4.20
+2026-03-23 22:26:57,434      noise=0.20: OA=10.17%  kappa=4.82
+2026-03-23 22:27:48,320      noise=0.30: OA=9.16%  kappa=5.24
+2026-03-23 22:28:38,766      noise=0.50: OA=3.95%  kappa=0.71
+2026-03-23 22:28:39,501    Saved: fig_paper_noise_robustness.png
+2026-03-23 22:28:39,648    Saved: fig_paper_noise_degradation.png

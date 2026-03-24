@@ -1,0 +1,7 @@
+model,dataset,epochs_to_95,final_train_acc
+QHSA-Net,IndianPines,22.0,98.0392156862745
+SSRN,IndianPines,9.0,100.0
+3D-CNN-Only,IndianPines,,50.882352941176464
+QHSA-Net,Salinas,11.0,98.51934110679252
+SSRN,Salinas,6.0,99.7223764575236
+3D-CNN-Only,Salinas,,81.36220618175088
